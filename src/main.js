@@ -1,0 +1,13 @@
+import {createApp} from 'vue';
+import './assets/main.css';
+import App from './components/organisms/app/index.vue';
+import router from './plugins/router';
+import store from './plugins/vuex';
+import registerTemplates from './plugins/templates';
+import vuetify from './plugins/vuetify';
+const Vue = createApp(App);
+Vue.use(store);
+Vue.use(router);
+Vue.use(vuetify);
+registerTemplates(Vue);
+Vue.mount('#app');

@@ -1,0 +1,34 @@
+@import './base.css';
+html{
+  overflow: hidden!important;
+}
+main{
+  padding: 60px;
+}
+#app {
+  font-weight: normal;
+  width: 100%;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: var(--vt-c-black);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: lightslategrey;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  #app {
+    display: flow-root;
+  }
+}
